@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan 15 23:14:19 2020
+# Process ID: 7560
+# Current directory: C:/Users/czebi/FPGA/PERC/PERC.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/czebi/FPGA/PERC/PERC.runs/synth_1/Top.vds
+# Journal file: C:/Users/czebi/FPGA/PERC/PERC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9760 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 426.074 ; gain = 96.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:49]
+INFO: [Synth 8-3491] module 'PER' declared at 'C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PER.vhd:5' bound to instance 'U1' of component 'PER' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'PER' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PER.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'PER' (1#1) [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PER.vhd:19]
+INFO: [Synth 8-3491] module 'PWM' declared at 'C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:6' bound to instance 'U2' of component 'PWM' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:15]
+WARNING: [Synth 8-614] signal 'cnt_of' is read in the process but is not in the sensitivity list [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:41]
+WARNING: [Synth 8-614] signal 'DATA' is read in the process but is not in the sensitivity list [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'PWM' (2#1) [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:15]
+INFO: [Synth 8-3491] module 'LUT' declared at 'C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/LUT.vhd:6' bound to instance 'U3' of component 'LUT' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'LUT' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/LUT.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/LUT.vhd:43]
+WARNING: [Synth 8-614] signal 'RE' is read in the process but is not in the sensitivity list [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/LUT.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT' (3#1) [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/LUT.vhd:18]
+INFO: [Synth 8-3491] module 'PRESCALER' declared at 'C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PRESC.vhd:5' bound to instance 'U4' of component 'PRESCALER' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'PRESCALER' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PRESC.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PRESCALER' (4#1) [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PRESC.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Top' (5#1) [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/new/Top.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:25 ; elapsed = 00:03:26 . Memory (MB): peak = 603.488 ; gain = 273.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:25 ; elapsed = 00:03:26 . Memory (MB): peak = 603.488 ; gain = 273.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:25 ; elapsed = 00:03:26 . Memory (MB): peak = 603.488 ; gain = 273.988
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/czebi/FPGA/PERC/PERC.srcs/constrs_1/imports/src/Nexys4-DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/czebi/FPGA/PERC/PERC.srcs/constrs_1/imports/src/Nexys4-DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/czebi/FPGA/PERC/PERC.srcs/constrs_1/imports/src/Nexys4-DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 858.887 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:34 ; elapsed = 00:03:37 . Memory (MB): peak = 858.887 ; gain = 529.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:34 ; elapsed = 00:03:37 . Memory (MB): peak = 858.887 ; gain = 529.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:34 ; elapsed = 00:03:37 . Memory (MB): peak = 858.887 ; gain = 529.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "N" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'int_data_reg' [C:/Users/czebi/FPGA/PERC/PERC.srcs/sources_1/imports/src/PWM.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:36 ; elapsed = 00:03:40 . Memory (MB): peak = 858.887 ; gain = 529.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module PWM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module LUT 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design LUT has unconnected port ADDRESS[15]
+WARNING: [Synth 8-3331] design LUT has unconnected port ADDRESS[14]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:13 ; elapsed = 00:06:19 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
+|LUT         | p_0_out    | 16384x16      | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:21 ; elapsed = 00:06:28 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:23 ; elapsed = 00:06:30 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:26 ; elapsed = 00:06:33 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:28 ; elapsed = 00:06:35 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:28 ; elapsed = 00:06:35 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:29 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:29 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:29 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:29 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     1|
+|4     |LUT2   |    27|
+|5     |LUT3   |   111|
+|6     |LUT4   |   120|
+|7     |LUT5   |   164|
+|8     |LUT6   |  9324|
+|9     |MUXF7  |  4525|
+|10    |MUXF8  |   335|
+|11    |FDCE   |   121|
+|12    |FDRE   |    35|
+|13    |LDC    |    16|
+|14    |IBUF   |     8|
+|15    |OBUF   |     1|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          | 14802|
+|2     |  U1     |PER       | 14651|
+|3     |  U2     |PWM       |    64|
+|4     |  U3     |LUT       |    48|
+|5     |  U4     |PRESCALER |    27|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:29 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:59 ; elapsed = 00:06:28 . Memory (MB): peak = 1794.879 ; gain = 1209.980
+Synthesis Optimization Complete : Time (s): cpu = 00:06:30 ; elapsed = 00:06:37 . Memory (MB): peak = 1794.879 ; gain = 1465.379
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4896 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Top' is not ideal for floorplanning, since the cellview 'PER' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:34 ; elapsed = 00:06:42 . Memory (MB): peak = 1794.879 ; gain = 1478.063
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/czebi/FPGA/PERC/PERC.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1794.879 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 23:21:11 2020...

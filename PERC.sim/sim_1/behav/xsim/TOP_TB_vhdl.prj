@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PERC.srcs/sources_1/imports/src/LUT.vhd" \
+"../../../../PERC.srcs/sources_1/imports/src/PER.vhd" \
+"../../../../PERC.srcs/sources_1/imports/src/PRESC.vhd" \
+"../../../../PERC.srcs/sources_1/imports/src/PWM.vhd" \
+"../../../../PERC.srcs/sources_1/new/Top.vhd" \
+"../../../../PERC.srcs/sim_1/imports/TB/TOP_TB.vhd" \
+
+# Do not sort compile order
+nosort

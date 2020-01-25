@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1579126456">
+  <File Type="PA-TCL" Name="Top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Top.vds"/>
+  <File Type="RDS-UTIL" Name="Top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/LUT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/LUT.vhd"/>
+        <Attr Name="ImportTime" Val="1546993106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/PER.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/PER.vhd"/>
+        <Attr Name="ImportTime" Val="1546993106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/PRESC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/PRESC.vhd"/>
+        <Attr Name="ImportTime" Val="1546811737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/PWM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/PWM.vhd"/>
+        <Attr Name="ImportTime" Val="1546993106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/bn.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/bn.txt"/>
+        <Attr Name="ImportTime" Val="1546958894"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/an.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/an.txt"/>
+        <Attr Name="ImportTime" Val="1578494160"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dn.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/dn.txt"/>
+        <Attr Name="ImportTime" Val="1546958911"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/cn.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/cn.txt"/>
+        <Attr Name="ImportTime" Val="1546958902"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/Nexys4-DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/KP_PERCUSSION/KP_PERCUSSION/PERCUSSION/PERCUSSION/src/Nexys4-DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1546993106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
